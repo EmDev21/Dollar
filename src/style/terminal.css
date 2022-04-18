@@ -1,0 +1,63 @@
+:root {
+    --main-bg-color: #E3B23C;
+    --prompt-bg-color: #262626;
+    --text-color: #E3B23C;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-family: monospace;
+    font-size: 1rem;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background-color: var(--main-bg-color);
+  }
+
+#screen {
+    width: 56vw;
+    height: 32vw;
+    box-shadow: 1px 1px 10px;
+    border-radius: 4px;
+    padding: 1.5em 0em;
+    overflow:auto; 
+    display:flex; 
+    flex-direction:column-reverse;
+    background-color: var(--prompt-bg-color);
+}
+
+#Container, #Container>div {
+    transform: rotateX(180deg);
+}
+
+.log {
+    padding-left: 10px;
+    padding-right: 10px;
+    color: var(--text-color);
+}
+
+input {
+    background-color: var(--prompt-bg-color);
+    color: var(--text-color);
+    width: 90%;
+}
+
+#input {
+    padding-left: 10px;
+    padding-right: 10px;
+    color: var(--text-color);
+    
+}
+
+#input p {
+    display: inline-block;
+}
