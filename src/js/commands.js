@@ -19,6 +19,16 @@ function youtube(args) {
     }
 }
 
+gh = github
+function github(args) {
+    if (args != undefined) {
+        search = args.replace(" ", "+")
+        window.open("https://github.com/search?q=" + search);
+    } else {
+        window.open("https://github.com/");
+    }
+}
+
 // Display time
 time = clock;
 function clock(args) {
