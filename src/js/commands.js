@@ -59,6 +59,16 @@ function urbandictionary(cmd) {
     }
 }
 
+ddg = duckduckgo
+function duckduckgo(cmd) {
+    if (args != undefined) {
+        search = args.replace(" ", "+")
+        window.open("https://duckduckgo.com/?q=" + search);
+    } else {
+        window.open("https://duckduckgo.com/");
+    }
+}
+
 // Display time
 time = clock;
 function clock(args) {
