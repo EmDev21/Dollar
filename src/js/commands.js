@@ -29,6 +29,16 @@ function github(args) {
     }
 }
 
+gl = gitlab
+function gitlab(args) {
+    if (args != undefined) {
+        search = args.replace(" ", "+")
+        window.open("https://gitlab.com/search?search=" + search);
+    } else {
+        window.open("https://gitlab.com/");
+    }
+}
+
 // Display time
 time = clock;
 function clock(args) {
