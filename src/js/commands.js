@@ -9,6 +9,16 @@ function google(args) {
     }
 }
 
+yt = youtube
+function youtube(args) {
+    if (args != undefined) {
+        search = args.replace(" ", "+")
+        window.open("https://www.youtube.com/results?search_query=" + search);
+    } else {
+        window.open("https://www.youtube.com/");
+    }
+}
+
 // Display time
 time = clock;
 function clock(args) {
@@ -21,8 +31,3 @@ cls = clear;
 function clear(args) {
     document.getElementById('wrapper').innerHTML = "";
 }
-
-
-
-
-
