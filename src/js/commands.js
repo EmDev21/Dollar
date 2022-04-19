@@ -39,6 +39,17 @@ function gitlab(args) {
     }
 }
 
+wikt = wiktionary
+wikt = wiktionary
+function wiktionary(cmd) {
+    if (args != undefined) {
+        search = args.replace(" ", "+")
+        window.open("https://en.wiktionary.org/w/index.php?search=" + search);
+    } else {
+        window.open("https://en.wiktionary.org/");
+    }
+}
+
 // Display time
 time = clock;
 function clock(args) {
