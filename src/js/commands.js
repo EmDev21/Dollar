@@ -9,6 +9,7 @@ function google(args) {
     }
 }
 
+// YouTube, online video sharing platform
 yt = youtube
 function youtube(args) {
     if (args != undefined) {
@@ -19,6 +20,7 @@ function youtube(args) {
     }
 }
 
+// GitHub, internet hosting of git repositories
 gh = github
 function github(args) {
     if (args != undefined) {
@@ -29,6 +31,7 @@ function github(args) {
     }
 }
 
+// GitLab, open-source GitHub alternative
 gl = gitlab
 function gitlab(args) {
     if (args != undefined) {
@@ -39,6 +42,7 @@ function gitlab(args) {
     }
 }
 
+// Wiktionary, dictionary owned by Wikimedia foundation
 wikt = wiktionary
 function wiktionary(cmd) {
     if (args != undefined) {
@@ -49,6 +53,7 @@ function wiktionary(cmd) {
     }
 }
 
+// Urban dictionary, online slang dictionary
 urban = urbandictionary
 function urbandictionary(cmd) {
     if (args != undefined) {
@@ -59,6 +64,7 @@ function urbandictionary(cmd) {
     }
 }
 
+// Duckduckgo search engine
 ddg = duckduckgo
 function duckduckgo(cmd) {
     if (args != undefined) {
